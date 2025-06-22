@@ -46,57 +46,6 @@ class PBWR_Admin {
             60
         );
 
-        // Submenu: Sample Page 1
-        add_submenu_page(
-            'pbwr-dashboard',
-            __('Sample Page 1', 'pbwr'),
-            __('Sample Page 1', 'pbwr'),
-            'manage_options',
-            'pbwr-dashboard', // Same as main to avoid duplication
-            [$this, 'render_sample_page_1']
-        );
-
-        // Submenu: Sample Page 2
-        add_submenu_page(
-            'pbwr-dashboard',
-            __('Sample Page 2', 'pbwr'),
-            __('Sample Page 2', 'pbwr'),
-            'manage_options',
-            'pbwr-sample-page-2',
-            [$this, 'render_sample_page_2']
-        );
-
-        // Submenu: Sample Page 3
-        add_submenu_page(
-            'pbwr-dashboard',
-            __('Sample Page 3', 'pbwr'),
-            __('Sample Page 3', 'pbwr'),
-            'manage_options',
-            'pbwr-sample-page-3',
-            [$this, 'render_sample_page_3']
-        );
-
-        // Submenu: Sample Page 4
-        add_submenu_page(
-            'pbwr-dashboard',
-            __('Sample Page 4', 'pbwr'),
-            __('Sample Page 4', 'pbwr'),
-            'manage_options',
-            'pbwr-sample-page-4',
-            [$this, 'render_sample_page_4']
-        );
-
-        // Submenu: Sample Page 5
-        add_submenu_page(
-            'pbwr-dashboard',
-            __('Sample Page 5', 'pbwr'),
-            __('Sample Page 5', 'pbwr'),
-            'manage_options',
-            'pbwr-sample-page-5',
-            [$this, 'render_sample_page_5']
-        );
-    }
-
 
 
     /**
@@ -105,28 +54,6 @@ class PBWR_Admin {
     public function render_admin_page() {
         echo '<div id="pbwr-admin-root"></div>';
     }
-
-    public function render_sample_page_1() {
-        echo '<div id="pbwr-admin-root" data-page="sample-page-1"></div>';
-    }
-
-    public function render_sample_page_2() {
-        echo '<div id="pbwr-admin-root" data-page="sample-page-2"></div>';
-    }
-
-    public function render_sample_page_3() {
-        echo '<div id="pbwr-admin-root" data-page="sample-page-3"></div>';
-    }
-
-    public function render_sample_page_4() {
-        echo '<div id="pbwr-admin-root" data-page="sample-page-4"></div>';
-    }
-
-    public function render_sample_page_5() {
-        echo '<div id="pbwr-admin-root" data-page="sample-page-5"></div>';
-    }
-
-
 
     /**
      * Enqueue admin scripts and styles.
